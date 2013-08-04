@@ -1,5 +1,4 @@
 # Generator-backbone-fiber
-[![Build Status](https://secure.travis-ci.org/bseth99/generator-backbone-fiber.png?branch=master)](https://travis-ci.org/bseth99/generator-backbone-fiber)
 
 A Yeoman generator for [Backbone.Fiber](https://github.com/bseth99/backbone-fiber).
 
