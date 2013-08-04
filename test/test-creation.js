@@ -5,14 +5,14 @@ var path    = require('path');
 var helpers = require('yeoman-generator').test;
 
 
-describe('backbone-splint generator', function () {
+describe('backbone-fiber generator', function () {
   beforeEach(function (done) {
     helpers.testDirectory(path.join(__dirname, 'temp'), function (err) {
       if (err) {
         return done(err);
       }
 
-      this.app = helpers.createGenerator('backbone-splint:app', [
+      this.app = helpers.createGenerator('backbone-fiber:app', [
         '../../app'
       ]);
       done();
@@ -22,12 +22,11 @@ describe('backbone-splint generator', function () {
   it('creates expected files', function (done) {
     var expected = [
       // add files you expect to exist here.
-      '.jshintrc',
-      '.editorconfig'
+      '.jshintrc'
     ];
 
     helpers.mockPrompt(this.app, {
-      'someOption': 'Y'
+      'appName': 'Y'
     });
     this.app.options['skip-install'] = true;
     this.app.run({}, function () {
