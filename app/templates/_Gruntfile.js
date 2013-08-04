@@ -52,7 +52,7 @@ grunt.initConfig({
 
    uglify: {
 
-      dynamic_mappings: {
+      app: {
          files: [
             {
                expand: true,
@@ -63,6 +63,26 @@ grunt.initConfig({
             },
          ],
       }
+
+      /*
+      *  Anything not optimized into bundle.js needs to be handled
+      *  separately so its minified and copied to the correct spot
+      *  under the dist folder.  For example:
+
+      vendor: {
+         files: [
+            {
+               expand: true,
+               cwd: 'vendor_components/',
+               dest: 'dist/scripts/vendor/',
+               src: [
+                  'moment.js'
+               ]
+            }
+         ]
+      }
+
+      */
    },
 
    cssmin: {

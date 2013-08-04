@@ -50,5 +50,26 @@ optimizer sees it and pulls it into the production bundle file.  Running:
 
 will optimize and copy everything into the dist folder which can then be deployed to your production environment.
 
+Anything not optimized into bundle.js needs to be handled separately so its minified and copied to the correct spot under the dist folder.  In
+the template Gruntfile.js, there's a commented out section to list those files.  Just uncomment it and start adding files to the `src` array.  For example:
+      
+      vendor: {
+         files: [
+            {
+               expand: true,
+               cwd: 'vendor_components/',
+               dest: 'dist/scripts/vendor/',
+               src: [
+                  'moment.js'
+               ]
+            }
+         ]
+      }    
+      
+Will minify the momentJS library file sitting in the vendor_components directory.  This is necessary only if library components are required within
+the application (either a model, collection, or view) because the RequireJS optimizer will not see them and you'll want them to get into the build so
+they can be loaded dynamically when needed.
+
+
 ## License
 [MIT License](http://en.wikipedia.org/wiki/MIT_License)
