@@ -20,21 +20,21 @@ A Yeoman generator for [Backbone.Fiber](https://github.com/bseth99/backbone-fibe
 
 ## More Goodies
 
-      `yo backbone-fiber:view <name>`
+      yo backbone-fiber:view <name>
 
 Will create a view and template file in the app/scripts/views directory.  The file will be the same name as you enter on the command line.
 This will become the module id you reference in the `data-view` attributes or the library calls to `connect` or `findChild`.  You can include
 paths, so if you type:
 
-      `yo backbone-fiber:view foo/bar`
+      yo backbone-fiber:view foo/bar
 
 bar.js and bar.html will be created in the app/scripts/views/foo directory.
 
 You can also create models and collections:
 
-      `yo backbone-fiber:model <name>`
+      yo backbone-fiber:model <name>
 
-      `yo backbone-fiber:collection <name>`
+      yo backbone-fiber:collection <name>
 
 Both commands will create files of the same name in the app/scripts/models directory.  The difference between the two commands is the model
 command will only create a model while the collection command will create both a model and a collection in the same file.
@@ -46,7 +46,7 @@ You develop and test in the app directory.  All external dependencies should eit
 Anything you want optimized into the preloaded bundle should be added as a dependency in the app/scripts/main.js.  That will ensure the RequireJS
 optimizer sees it and pulls it into the production bundle file.  Running:
 
-      `grunt build` 
+      grunt build
 
 will optimize and copy everything into the dist folder which can then be deployed to your production environment.
 
