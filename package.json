@@ -1,0 +1,37 @@
+{
+  "name": "generator-backbone-fiber",
+  "version": "0.0.1",
+  "description": "A generator for Yeoman",
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "homepage": "https://github.com/bseth99/generator-backbone-fiber",
+  "bugs": "https://github.com/bseth99/generator-backbone-fiber/issues",
+  "author": {
+    "name": "Ven Olson",
+    "email": "",
+    "url": "https://github.com/bseth99"
+  },
+  "main": "app/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bseth99/generator-backbone-fiber.git"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "yeoman-generator": "~0.12.0"
+  },
+  "devDependencies": {
+    "mocha": "~1.10.0"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ]
+}
