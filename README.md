@@ -12,7 +12,7 @@ A Yeoman generator for [Backbone.Fiber](https://github.com/bseth99/backbone-fibe
 
 - Make sure you have [yo](https://github.com/yeoman/yo) installed:
     `npm install -g yo`
-- Install the generator: `npm install -g https://github.com/bseth99/generator-backbone-fiber`
+- Install the generator: `sudo npm install -g git://github.com/bseth99/generator-backbone-fiber.git`
 - Run: `yo backbone-fiber`
 - Enter your application's name
 - Sit back and relax while Yeoman sets things up
